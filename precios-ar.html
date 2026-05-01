@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="خطط الاستثمار المستدام - Ecoinvest UAE">
+    <title>خطط التسعير - Ecoinvest UAE</title>
+    <link rel="stylesheet" href="css/styles-ar.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">ECOINVEST</div>
+            <ul class="nav-links">
+                <li><a href="index-ar.html">الرئيسية</a></li>
+                <li><a href="index-ar.html#servicios">الخدمات</a></li>
+                <li><a href="precios-ar.html">الخطط</a></li>
+                <li><a href="index-ar.html#contacto">اتصل</a></li>
+            </ul>
+            <div class="language-selector">
+                <a href="precios.html" class="lang-link">ES</a>
+                <span>|</span>
+                <a href="precios-en.html" class="lang-link">EN</a>
+                <span>|</span>
+                <a href="precios-ar.html" class="lang-link active">AR</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section class="pricing-hero">
+        <div class="container">
+            <h1>خطط الاستثمار</h1>
+            <p>اختر الخطة المثالية لمحفظتك الاستثمارية المستدامة</p>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">شهير</div>
+                    <h3>المبتدئ</h3>
+                    <div class="price">
+                        <span class="amount">$5,000</span>
+                        <span class="period">الحد الأدنى للاستثمار</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ الوصول إلى 10+ مشاريع</li>
+                        <li>✓ العائد: 9-10%</li>
+                        <li>✓ المدة: 20-30 سنة</li>
+                        <li>✓ تنويع أساسي</li>
+                        <li>✓ لوحة تحكم شخصية</li>
+                        <li>✓ دعم عبر البريد الإلكتروني</li>
+                    </ul>
+                    <button class="btn-pricing stripe-btn" data-plan="starter">ابدأ الاستثمار</button>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">الأكثر مبيعاً</div>
+                    <h3>احترافي</h3>
+                    <div class="price">
+                        <span class="amount">$25,000</span>
+                        <span class="period">الحد الأدنى للاستثمار</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ الوصول إلى جميع المشاريع</li>
+                        <li>✓ العائد: 10-12%</li>
+                        <li>✓ المدة: 20-25 سنة</li>
+                        <li>✓ مستشار شخصي مخصص</li>
+                        <li>✓ لوحة تحكم متقدمة</li>
+                        <li>✓ تقارير شهرية</li>
+                        <li>✓ مكالمات ربع سنوية</li>
+                    </ul>
+                    <button class="btn-pricing stripe-btn" data-plan="professional">ابدأ الاستثمار</button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">النخبة</div>
+                    <h3>المؤسسة</h3>
+                    <div class="price">
+                        <span class="amount">$100,000+</span>
+                        <span class="period">استثمار مخصص</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ وصول VIP للمشاريع الحصرية</li>
+                        <li>✓ العائد: 12-14%</li>
+                        <li>✓ المدة: 15-20 سنة</li>
+                        <li>✓ فريق إدارة مخصص</li>
+                        <li>✓ تقارير مخصصة</li>
+                        <li>✓ مكالمات غير محدودة</li>
+                        <li>✓ أحداث VIP حصرية</li>
+                    </ul>
+                    <button class="btn-pricing" data-plan="enterprise">اتصل بالفريق</button>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="comparison-table">
+                <h2>المقارنة التفصيلية</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>الميزات</th>
+                            <th>المبتدئ</th>
+                            <th>احترافي</th>
+                            <th>المؤسسة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>الحد الأدنى للاستثمار</td>
+                            <td>$5,000</td>
+                            <td>$25,000</td>
+                            <td>مخصص</td>
+                        </tr>
+                        <tr>
+                            <td>العائد المتوقع</td>
+                            <td>9-10%</td>
+                            <td>10-12%</td>
+                            <td>12-14%</td>
+                        </tr>
+                        <tr>
+                            <td>المشاريع المتاحة</td>
+                            <td>10+</td>
+                            <td>45+</td>
+                            <td>الكل + حصري</td>
+                        </tr>
+                        <tr>
+                            <td>مستشار مخصص</td>
+                            <td>❌</td>
+                            <td>✅</td>
+                            <td>✅ فريق</td>
+                        </tr>
+                        <tr>
+                            <td>لوحة تحكم متقدمة</td>
+                            <td>أساسي</td>
+                            <td>كامل</td>
+                            <td>متميز</td>
+                        </tr>
+                        <tr>
+                            <td>التقارير</td>
+                            <td>ربع سنوية</td>
+                            <td>شهرية</td>
+                            <td>مخصصة</td>
+                        </tr>
+                        <tr>
+                            <td>الدعم</td>
+                            <td>بريد إلكتروني</td>
+                            <td>دردشة + بريد</td>
+                            <td>24/7 مخصص</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>معالجة الاستثمار</h2>
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label>الخطة المختارة</label>
+                    <input type="text" id="planName" readonly>
+                </div>
+                <div class="form-group">
+                    <label>المبلغ</label>
+                    <input type="text" id="planAmount" readonly>
+                </div>
+                <div class="form-group">
+                    <label>الاسم الكامل</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label>البريد الإلكتروني</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label>الهاتف</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div id="card-element"></div>
+                <button type="submit" class="btn-submit">اكمل الدفع</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>الأسئلة الشائعة</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>ما هو الحد الأدنى لضمان العائد؟</h4>
+                    <p>تقدم مشاريعنا عوائد بين 9-14% سنويًا حسب الخطة. لا يوجد أداء مضمون، لكن جميع مشاريعنا تم تدقيقها بشكل مستقل.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>هل يمكنني سحب استثماري مبكراً؟</h4>
+                    <p>نعم، بشروط محددة. قد تشمل الانسحابات المبكرة عقوبات طفيفة حسب المشروع المختار.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>كيف يعمل الدفع؟</h4>
+                    <p>نقبل بطاقات الائتمان والتحويلات البنكية والمحافظ الرقمية. يتم معالجة استثمارك خلال 24-48 ساعة.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>هل هناك رسوم مخفية؟</h4>
+                    <p>لا. نحن شفافون 100%. الرسم الوحيد هو رسم إدارة سنوي بنسبة 1% مدرج في عائدك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>ابدأ رحلتك نحو استثمارات مستدامة</h2>
+            <p>انضم إلى 500+ مستثمر يثقون بالفعل بـ Ecoinvest لمستقبلهم المالي</p>
+            <button class="cta-button-large" onclick="document.getElementById('paymentModal').style.display='block'">استثمر الآن</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ECOINVEST</h4>
+                    <p>قادة الاستثمار المستدام في الإمارات</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index-ar.html">الرئيسية</a></li>
+                        <li><a href="precios-ar.html">الخطط</a></li>
+                        <li><a href="index-ar.html#contacto">اتصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>قانوني</h4>
+                    <ul>
+                        <li><a href="#">الشروط</a></li>
+                        <li><a href="#">الخصوصية</a></li>
+                        <li><a href="#">إشعار قانوني</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ecoinvest UAE. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/pricing.js"></script>
+</body>
+</html>

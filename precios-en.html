@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Investment Plans for Sustainable Energy - Ecoinvest UAE">
+    <title>Pricing Plans - Ecoinvest UAE</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">ECOINVEST</div>
+            <ul class="nav-links">
+                <li><a href="index-en.html">Home</a></li>
+                <li><a href="index-en.html#servicios">Services</a></li>
+                <li><a href="precios-en.html">Plans</a></li>
+                <li><a href="index-en.html#contacto">Contact</a></li>
+            </ul>
+            <div class="language-selector">
+                <a href="precios.html" class="lang-link">ES</a>
+                <span>|</span>
+                <a href="precios-en.html" class="lang-link active">EN</a>
+                <span>|</span>
+                <a href="precios-ar.html" class="lang-link">AR</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section class="pricing-hero">
+        <div class="container">
+            <h1>Investment Plans</h1>
+            <p>Choose the perfect plan for your sustainable investment portfolio</p>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">POPULAR</div>
+                    <h3>Starter</h3>
+                    <div class="price">
+                        <span class="amount">$5,000</span>
+                        <span class="period">minimum investment</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Access to 10+ projects</li>
+                        <li>✓ Return: 9-10%</li>
+                        <li>✓ Term: 20-30 years</li>
+                        <li>✓ Basic diversification</li>
+                        <li>✓ Personal dashboard</li>
+                        <li>✓ Email support</li>
+                    </ul>
+                    <button class="btn-pricing stripe-btn" data-plan="starter">Start Investing</button>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">BESTSELLER</div>
+                    <h3>Professional</h3>
+                    <div class="price">
+                        <span class="amount">$25,000</span>
+                        <span class="period">minimum investment</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Access to all projects</li>
+                        <li>✓ Return: 10-12%</li>
+                        <li>✓ Term: 20-25 years</li>
+                        <li>✓ Dedicated advisor</li>
+                        <li>✓ Advanced dashboard</li>
+                        <li>✓ Monthly reports</li>
+                        <li>✓ Quarterly calls</li>
+                    </ul>
+                    <button class="btn-pricing stripe-btn" data-plan="professional">Start Investing</button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">ELITE</div>
+                    <h3>Enterprise</h3>
+                    <div class="price">
+                        <span class="amount">$100,000+</span>
+                        <span class="period">custom investment</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ VIP access to exclusive projects</li>
+                        <li>✓ Return: 12-14%</li>
+                        <li>✓ Term: 15-20 years</li>
+                        <li>✓ Dedicated management team</li>
+                        <li>✓ Custom reports</li>
+                        <li>✓ Unlimited calls</li>
+                        <li>✓ Exclusive VIP events</li>
+                    </ul>
+                    <button class="btn-pricing" data-plan="enterprise">Contact Team</button>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="comparison-table">
+                <h2>Detailed Comparison</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Starter</th>
+                            <th>Professional</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Minimum Investment</td>
+                            <td>$5,000</td>
+                            <td>$25,000</td>
+                            <td>Custom</td>
+                        </tr>
+                        <tr>
+                            <td>Expected Return</td>
+                            <td>9-10%</td>
+                            <td>10-12%</td>
+                            <td>12-14%</td>
+                        </tr>
+                        <tr>
+                            <td>Available Projects</td>
+                            <td>10+</td>
+                            <td>45+</td>
+                            <td>All + Exclusive</td>
+                        </tr>
+                        <tr>
+                            <td>Dedicated Advisor</td>
+                            <td>❌</td>
+                            <td>✅</td>
+                            <td>✅ Full Team</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Dashboard</td>
+                            <td>Basic</td>
+                            <td>Complete</td>
+                            <td>Premium</td>
+                        </tr>
+                        <tr>
+                            <td>Reports</td>
+                            <td>Quarterly</td>
+                            <td>Monthly</td>
+                            <td>Custom</td>
+                        </tr>
+                        <tr>
+                            <td>Support</td>
+                            <td>Email</td>
+                            <td>Chat + Email</td>
+                            <td>24/7 Dedicated</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Process Investment</h2>
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label>Selected Plan</label>
+                    <input type="text" id="planName" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Amount</label>
+                    <input type="text" id="planAmount" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div id="card-element"></div>
+                <button type="submit" class="btn-submit">Complete Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What is the minimum guaranteed return?</h4>
+                    <p>Our projects offer returns between 9-14% annually depending on the plan. There is no guaranteed performance, but all our projects are independently audited.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I withdraw my investment early?</h4>
+                    <p>Yes, with specific terms. Early withdrawals may include minor penalties depending on the selected project.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How does payment work?</h4>
+                    <p>We accept credit cards, bank transfers and digital wallets. Your investment is processed within 24-48 hours.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Are there hidden fees?</h4>
+                    <p>No. We are 100% transparent. The only fee is a 1% annual management fee included in your return.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Start Your Journey to Sustainable Investments</h2>
+            <p>Join 500+ investors who already trust Ecoinvest for their financial future</p>
+            <button class="cta-button-large" onclick="document.getElementById('paymentModal').style.display='block'">Invest Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ECOINVEST</h4>
+                    <p>Leaders in sustainable investment in UAE</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index-en.html">Home</a></li>
+                        <li><a href="precios-en.html">Plans</a></li>
+                        <li><a href="index-en.html#contacto">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Legal Notice</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ecoinvest UAE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/pricing.js"></script>
+</body>
+</html>
