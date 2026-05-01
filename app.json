@@ -1,0 +1,22 @@
+{
+  "name": "Ecoinvest UAE",
+  "description": "Plataforma de inversión sostenible en UAE",
+  "repository": "https://github.com/moradbennaceursky1-beep/automatic-chainsaw",
+  "keywords": ["inversión verde", "sostenibilidad", "UAE", "energía renovable"],
+  "image": "https://via.placeholder.com/400x200?text=Ecoinvest+UAE",
+  "author": {
+    "name": "Ecoinvest Team",
+    "email": "info@ecoinvest.ae"
+  },
+  "env": {
+    "CONTACT_EMAIL": {
+      "description": "Email para recibir mensajes de contacto",
+      "value": "info@ecoinvest.ae"
+    },
+    "PHONE": {
+      "description": "Número de teléfono de contacto",
+      "value": "+971 4 XXX XXXX"
+    }
+  },
+  "buildpacks": []
+}

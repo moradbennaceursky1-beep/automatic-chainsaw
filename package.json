@@ -1,0 +1,22 @@
+{
+  "name": "ecoinvest-uae",
+  "version": "1.0.0",
+  "description": "Sitio web moderno para Ecoinvest UAE - Plataforma de inversión sostenible",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server . -p 8080 -c-1",
+    "build": "echo 'Este proyecto no requiere compilación'",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "inversión verde",
+    "sostenibilidad",
+    "UAE",
+    "energía renovable"
+  ],
+  "author": "Ecoinvest Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  }
+}

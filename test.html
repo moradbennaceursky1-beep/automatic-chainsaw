@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoinvest UAE - Página de Prueba</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #00A86B 0%, #005A3D 100%);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .status {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            opacity: 0.95;
+        }
+        .success {
+            color: #FFD700;
+            font-weight: bold;
+        }
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        a {
+            background: #FFD700;
+            color: #005A3D;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .checkmark {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="checkmark">✅</div>
+        <h1>¡Proyecto Creado!</h1>
+        <div class="status">
+            <p class="success">El sitio web de Ecoinvest UAE está listo</p>
+        </div>
+        <p style="margin: 20px 0;">Tu sitio web profesional y responsivo ha sido creado exitosamente.</p>
+        
+        <div class="buttons">
+            <a href="index.html">Ver Sitio Principal</a>
+            <a href="README-SITIO.md">Documentación</a>
+        </div>
+        
+        <p style="margin-top: 30px; opacity: 0.8; font-size: 0.9rem;">
+            Para iniciar un servidor local:<br>
+            <code>python -m http.server 8000</code>
+        </p>
+    </div>
+</body>
+</html>

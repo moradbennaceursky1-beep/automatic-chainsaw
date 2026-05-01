@@ -1,0 +1,14 @@
+[build]
+  command = "echo 'No build needed for static site'"
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  framework = "#static"
+  command = "python -m http.server 8000"
+  port = 8000
+  publish = "."
